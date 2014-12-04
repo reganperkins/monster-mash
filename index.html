@@ -26,7 +26,7 @@
         //player
         Q.Sprite.extend("Player",{
             init: function(p) {
-              this._super(p, { asset: "monster.png", x: 110, y: 50, jumpSpeed: -400});
+              this._super(p, { asset: "monstero.png", x: 110, y: 50, jumpSpeed: -400});
               this.add("2d, platformerControls");              
             },
             step: function(dt) {
@@ -148,7 +148,7 @@
         
         
         //load assets
-        Q.load("tiles_map.png, monster.png, slime.png, fly.png, level1.tmx", function() {
+        Q.load("tiles_map.png, monstero.png, slime.png, fly.png, level1.tmx", function() {
           Q.sheet("tiles","tiles_map.png", { tilew: 70, tileh: 70});          
           Q.stageScene("level1");
         });
